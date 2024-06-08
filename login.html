@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="common_css\style.css">
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+        <a class="navbar-brand text-warning" href="#" style="font-family:verdana; font-size:30px;">
+            <img src="images/logo.jpg" width=50px height=50px class="img-responsive" alt=""><b>
+                Tomato</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <b>Home</b> <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="search-container">
+                <!-- <form class="search">
+             <div class="input-group">
+               <input type="search" style="width:500px;" class="form-control" placeholder="Search" name="search">
+               <div class="input-group-btn">
+                <button type="button" class="btn btn-warning">
+            <i class="fas fa-search"></i>
+            
+          </button>
+               </div>
+             </div>
+            
+            </form> -->
+            </div>
+
+
+
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> My Cart </a>
+                </li>
+
+
+
+                <li class="nav-item active dropdown">
+                    <a class="nav-link test-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i> Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-dark " href="#">Login</a>
+                        <a class="dropdown-item text-dark" href="#">Register</a>
+
+                    </div>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="card">
+                    <div class="card-header text-center bg-warning">
+                        <h3>Login Here!</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="homepage.html" method="post">
+                            <div class="form-group input-group">
+
+
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-unlock-alt fa-color"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" name="emailid" id="emailid"
+                                    aria-describedby="emailHelp" placeholder="Enter Your EmailId" required>
+                            </div>
+                            <div class="form-group input-group">
+
+
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-unlock-alt fa-color"></i>
+                                    </div>
+                                </div>
+                                <input type="password" class="form-control" name="password" id="lpswd"
+                                    aria-describedby="emailHelp" placeholder="Enter Your Password" required>
+                            </div>
+
+                            <div class="form-group form-check ">
+                                <input type="checkbox" class="form-input-check" id="check">
+                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                            </div>
+
+                            <div class="container text-center">
+                                <button type="submit" class="btn btn-outline-success text-center" href="homepage.html">Submit</button>
+                                <button type="submit" class="btn btn-outline-danger text-center">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center bg-warning">
+                        <p>New User?<a href="Admin_Register.jsp">Register Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

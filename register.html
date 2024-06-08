@@ -1,0 +1,167 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<title>Admin Register</title>
+<link rel="stylesheet" href="common_css\style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        
+        
+          <a class="navbar-brand text-warning" href="#"  style="font-family:verdana; font-size:30px;">
+         <img src="images/logo.jpg" width=50px height=50px class="img-responsive" alt=""><b>
+            Tomato</b></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="HomePage.html"> <b>Home</b> <span class="sr-only">(current)</span></a>
+              </li>
+               </ul>
+              <div class="search-container">
+            <!-- <form class="search">
+             <div class="input-group">
+               <input type="search" style="width:500px;" class="form-control" placeholder="Search" name="search">
+               <div class="input-group-btn">
+                <button type="button" class="btn btn-warning">
+            <i class="fas fa-search"></i>
+            
+          </button>
+               </div>
+             </div>
+            
+            </form> -->
+            </div>
+           
+            
+           
+              
+            <ul class="navbar-nav ml-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> My Cart </a>
+              </li>
+            
+            
+              
+             <li class="nav-item active dropdown">
+                <a class="nav-link test-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i> Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-dark "href="login.html">Login</a>
+                  <a class="dropdown-item text-dark" href="register.html">Register</a>
+                
+             </div>
+             </ul>
+            </div>
+         
+          </nav>
+<div class="container mt-2">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<div class="card">
+			 <!-- card header -->
+				<div class="card-header text-center bg-warning"><h3>Admin Register Here!</h3></div>
+				
+			<!-- Card Body -->	
+			<div class="card-body">
+			 
+			 	<form action="login.html"  method="post">
+  					
+					<div class="form-group input-group ">
+			 		<div class="input-group-prepend">  <!-- for icon -->
+			 		 <div class="input-group-text">
+			 		 	<i class="fas fa-user fa-color"></i>
+			 		 </div>
+			 		</div>
+			 			<input type="text" class="form-control" name="aname" id="fname"  placeholder="Enter Full Name" autocomplete="off">
+  						<span id="fname" class="text-danger form-weight-bold"></span>
+  					</div>
+  					
+  					<div class="form-group input-group">
+			 		<div class="input-group-prepend">
+			 		 <div class="input-group-text">
+			 		 	<i class="fas fa-at fa-color"></i>
+			 		 </div>
+			 		</div>
+			 			<input type="email" class="form-control" name="aemail" id="email"  placeholder="Enter Email ID"  autocomplete="nope" required>
+  					</div>
+  					
+  					<div class="form-group input-group">
+			 		<div class="input-group-prepend">
+			 		 <div class="input-group-text">
+			 		 	<i class="fas fa-lock fa-color"></i>
+			 		 </div>
+			 		</div>
+			 			<input type="password" class="form-control" name="apswd" id="pswd"  placeholder="Password" autocomplete="off" required>
+  					</div>
+  					
+  					<div class="form-group input-group">
+			 		<div class="input-group-prepend">
+			 		 <div class="input-group-text">
+			 		 	<i class="fas fa-lock fa-color"></i>
+			 		 </div>
+			 		</div>
+			 			<input type="password" class="form-control" name="acpswd" id="cpswd"  placeholder="Confirm Password" autocomplete="off" required>
+  					</div>
+  					
+  					<div class="form-group input-group">
+			 		  <div class="input-group-prepend">
+			 		  	<div class="input-group-text">
+			 		  		<i class="fas fa-phone-alt fa-color"></i>
+			 		  	</div>
+			 		  </div>
+			 		  	<select style="max-width:80px">
+			 		  		<option>+91</option>
+			 		  		<option>+92</option>
+			 		  		<option>+93</option>
+			 		  		<option>+94</option>
+			 		  	</select>
+			 		  	<input type="number" class="form-control" name="aphone" id="phone" placeholder="Enter Phone Number" autocomplete="off"  required>
+			 		</div>
+			 		
+			 		<div class="form-group input-group">
+			 		<div class="input-group-prepend">
+			 		 <div class="input-group-text">
+			 		 <i class="fas fa-map-marker-alt fa-color"></i>
+			 		 </div>
+			 		</div>
+			 			<textarea name="aaddr" id="addr" name="aaddr" rows="4" cols="59" placeholder="Enter Your Address"autocomplete="off" required></textarea>
+  					</div>
+  					
+  					<div class="container text-center">
+  						<button type="submit" class="btn btn-success">Submit</button>
+  						<button type="cancel" class="btn btn-warning">Cancel</button>
+  					</div>
+  					
+			 	</form></div>
+			
+			<!-- Card Footer -->	
+			<div class="card-footer text-center">
+			 <p>Already Have Account?<a href="Login.jsp">LogIn</a></p>
+					
+			</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>
+			 	
+					
+			
